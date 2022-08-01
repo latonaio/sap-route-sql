@@ -9,9 +9,11 @@ https://api.sap.com/api/route/overview
 本レポジトリ の sql設定ファイルの内容は、上記URL の API 仕様を前提としています。  
 
 ## sqlの設定ファイル
-sap-route-sqlには、sqlの設定ファイルとして以下のsqlファイルが含まれています。  
+sap-route-sqlには、sqlの設定ファイルとして以下のsqlファイルが含まれています。　  
 
-* sap-route-sql （SAPルート - ルート）
+* sap-route-sql-route-collection-data.sql （SAPルート - ルート）
+* sap-route-sql-route-account-collection.data.sql (SAP ルート - ルートアカウント)
+* sap-route-sql-route-involved-parties-collection-data.sql (SAP ルート - ルート関係者)
 
 ## MySQLのセットアップ / Kubernetesの設定 / SQLテーブルの作成方法
 MySQLのセットアップ / Kubernetesの設定 / 具体的なSQLテーブルの作成方法、については、[mysql-kube](https://github.com/latonaio/mysql-kube)を参照ください。

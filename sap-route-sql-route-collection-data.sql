@@ -1,4 +1,4 @@
-CREATE TABLE `sap_route_data`
+CREATE TABLE `sap_route_collection_data`
 (
 	 `ID`                          varchar(35) NOT NULL, 
 	 `ObjectID`                    varchar(70) DEFAULT NULL, 
