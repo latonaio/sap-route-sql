@@ -1,4 +1,4 @@
-CREATE TABLE `sap_route_account_collection_data`
+CREATE TABLE `sap_route_route_account_collection_data`
 (
   `ObjectID`               varchar(70)    NOT NULL,
   `AccountID`              varchar(60)    NOT NULL,
@@ -19,6 +19,7 @@ CREATE TABLE `sap_route_account_collection_data`
   `VisitUUID`              varchar(80)    DEFAULT NULL,
   `VisitID`                varchar(35)    DEFAULT NULL,
   `Route`                  varchar(80)    DEFAULT NULL,
-    PRIMARY KEY (`ObjectID`, `AccountID`)
+    PRIMARY KEY (`ObjectID`, `AccountID`),
+    CONSTRAINT `SAPRouteRouteAccountCollectionData_fk` FOREIGN KEY (`ObjectID`) REFERENCES `sap_route_route_collection_data` (`ObjectID`)
 ) ENGINE = InnoDB
- DEFAULT CHARSET = utf8mb4;
+DEFAULT CHARSET = utf8mb4;
